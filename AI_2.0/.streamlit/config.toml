@@ -1,1 +1,12 @@
+# .streamlit/config.toml
 
+[theme]
+# A modern purple for the primary color
+primaryColor="#4B0082" 
+# Dark background
+backgroundColor="#0e1117" 
+# Slightly lighter dark background for elements like sidebars or containers
+secondaryBackgroundColor="#1f2430" 
+# White text
+textColor="#FAFAFA" 
+font="sans serif"
