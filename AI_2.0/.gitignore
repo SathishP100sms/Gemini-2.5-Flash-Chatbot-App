@@ -1,8 +1,0 @@
-# .gitignore content
-
-# Ignore all Python cache directories
-__pycache__/
-
-# Ignore environment variable files and logs
-.env
-*.log
