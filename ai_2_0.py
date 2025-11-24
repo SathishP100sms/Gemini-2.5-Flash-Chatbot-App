@@ -35,7 +35,7 @@ def role(user_role):
 # --- Main App Logic ---
 
 # Get the API key
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 if not GOOGLE_API_KEY:
     st.error("GOOGLE_API_KEY environment variable not found. Please set it in your .env file.")
