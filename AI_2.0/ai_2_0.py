@@ -35,12 +35,12 @@ def role(user_role):
 # --- Main App Logic ---
 
 # Get the API key
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
-if not GOOGLE_API_KEY:
+if "GOOGLE_API_KEY" not in st.secrets:
     st.error("GOOGLE_API_KEY environment variable not found. Please set it in your .env file.")
     st.stop()
-
+    
 # Configure the Generative AI client
 try:
     genai.configure(api_key=GOOGLE_API_KEY)
@@ -91,4 +91,5 @@ if prompt:
                 st.markdown(gemini_response.text)
                 
         except Exception as e:
+
             st.error(f"An error occurred while getting the response: {e}")
