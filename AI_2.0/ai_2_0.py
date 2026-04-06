@@ -9,7 +9,6 @@ import os
 load_dotenv()
 
 # 2. Configure Streamlit page settings
-# Note: You need a modern Streamlit version (>=0.65.0) for st.set_page_config
 st.set_page_config(
     page_title="Gemini 2.5 Flash Chatbot",
     page_icon=":gem:", # Title Emojis
